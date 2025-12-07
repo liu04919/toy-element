@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ErButton } from "toy-element";
+</script>
 
 <template>
-  <er-button></er-button>
+  <er-button loading>111</er-button>
 </template>
 
 <style scoped></style>

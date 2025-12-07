@@ -23,9 +23,12 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "packages/**/*.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.vue",
-    "packages/**/*.d.ts"
-  ]
+    "packages/core/index.ts",
+    "packages/hooks/**/*.ts",
+    "packages/utils/**/*.ts",
+    "packages/components/index.ts",
+    "packages/components/**/*.ts",
+    "packages/components/**/*.vue"
+  ],
+  "exclude": ["packages/components/vitest.config.ts"]
 }
