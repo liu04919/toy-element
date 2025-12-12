@@ -29,6 +29,7 @@
   "dependencies": {
     "@toy-element/components": "workspace:*",
     "@yetong919/toy-element": "workspace:*",
+    "lodash-es": "^4.17.21",
     "vue": "^3.5.25"
   }
 }

@@ -24,10 +24,12 @@
     "dist/index.css"
   ],
   "scripts": {
-    "build": "run-s clean bulid-only move-style",
-    "bulid-only": "run-p bulid-umd build-es",
+    "build": "run-p bulid-umd build-es",
+    "build:watch": "run-p bulid-umd:watch build-es:watch",
     "bulid-umd": "vite build --config vite.umd.config.ts",
     "build-es": "vite build --config vite.es.config.ts",
+    "bulid-umd:watch": "vite build --watch --config vite.umd.config.ts",
+    "build-es:watch": "vite build --watch --config vite.es.config.ts",
     "move-style": "move-file dist/es/index.css dist/index.css",
     "clean": "rimraf dist",
     "release": "release-it"
@@ -46,8 +48,12 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/shelljs": "^0.8.17",
     "@vitejs/plugin-vue": "^6.0.2",
+    "shelljs": "^0.10.0",
     "vite": "^7.2.6",
+    "vite-plugin-compression2": "^2.4.0",
     "vite-plugin-dts": "3.9.1"
   },
   "peerDependencies": {

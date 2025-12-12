@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from "@storybook/vue3-vite";
 
 import { fn, within, userEvent, expect, clearAllMocks } from "storybook/test";
 import { set } from "lodash-es";
-import { ErButton, ErButtonGroup } from "toy-element";
-
+import { ErButton, ErButtonGroup } from "@yetong919/toy-element";
+import "@yetong919/toy-element/dist/theme/Button.css";
 // Allow arbitrary argTypes to support custom args like 'content' that are not component props
 type Story = StoryObj<typeof ErButton> & { argTypes?: any };
 
