@@ -15,6 +15,9 @@ const dirname =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [vue() as PluginOption],
+  define: {
+    TEST: JSON.stringify(false),
+  },
   test: {
     projects: [
       {

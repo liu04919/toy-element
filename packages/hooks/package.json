@@ -10,5 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.16.1"
+  "packageManager": "pnpm@10.16.1",
+  "dependencies": {
+    "@toy-element/locale": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "vue3-i18n": "^1.1.5"
+  }
 }

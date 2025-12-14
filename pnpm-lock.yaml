@@ -183,7 +183,19 @@ importers:
         specifier: 1.0.0-rc.44
         version: 1.0.0-rc.44(@algolia/client-search@5.45.0)(@types/node@24.10.1)(@types/react@19.2.7)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(search-insights@2.17.3)(terser@5.44.1)(typescript@5.9.3)
 
-  packages/hooks: {}
+  packages/hooks:
+    dependencies:
+      '@toy-element/locale':
+        specifier: workspace:*
+        version: link:../locale
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
+      vue3-i18n:
+        specifier: ^1.1.5
+        version: 1.1.5(vue@3.5.25(typescript@5.9.3))
+
+  packages/locale: {}
 
   packages/play:
     dependencies:
@@ -4245,6 +4257,11 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: '*'
+
+  vue3-i18n@1.1.5:
+    resolution: {integrity: sha512-DN5XfE0z6BnFxjbP/qW8AKI5QCex97L2l8z7G76ccTkfTsJ18n4mXGCy4K9H2rm4FlzDx/USPlPqQK64yXQqDg==}
+    peerDependencies:
+      vue: ^3.0.0
 
   vue@3.5.25:
     resolution: {integrity: sha512-YLVdgv2K13WJ6n+kD5owehKtEXwdwXuj2TTyJMsO7pSeKw2bfRNZGjhB7YzrpbMYj5b5QsUebHpOqR3R3ziy/g==}
@@ -8757,6 +8774,10 @@ snapshots:
       '@vue/language-core': 1.8.27(typescript@5.9.3)
       semver: 7.7.3
       typescript: 5.9.3
+
+  vue3-i18n@1.1.5(vue@3.5.25(typescript@5.9.3)):
+    dependencies:
+      vue: 3.5.25(typescript@5.9.3)
 
   vue@3.5.25(typescript@5.9.3):
     dependencies:
